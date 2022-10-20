@@ -2,7 +2,7 @@ FROM node:12.18-buster-slim AS build
 
 RUN apt-get update && apt-get install -y git
 
-RUN git clone --branch 14.2.5 --depth 1  https://github.com/nightscout/cgm-remote-monitor.git /opt/app
+RUN git clone --branch 14.2.6 --depth 1  https://github.com/nightscout/cgm-remote-monitor.git /opt/app
 
 
 FROM node:12.18-buster-slim
